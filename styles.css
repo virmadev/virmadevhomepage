@@ -2,12 +2,13 @@
 
 :root {
     --links: rgb(224, 249, 255);
-    overflow-x: hidden;
 }
 html {
     scroll-behavior: smooth;
   }
-
+html,body{
+    overflow-x: hidden;
+}
 body {
     font-family: "Consolas";
 }
@@ -24,7 +25,14 @@ body {
 body {
     background-color: var(--links);
     background-color: rgb(186, 214, 213);
+    min-height: 100%;
+    flex-grow: 1;
+
 }
+body{ min-height: 100vh; margin:0; }
+body{ display:flex; flex-direction:column; }
+
+.content { flex:1; }
 .footer {
     background-color: #f5f5f5;
 }
@@ -81,7 +89,7 @@ transform: scale(1.4);
 }
 
 .hero {
-  height: 40vh;
+  /* height: 40vh; */
 
 }
 
