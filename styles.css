@@ -1,0 +1,94 @@
+
+
+:root {
+    --links: rgb(224, 249, 255);
+    overflow-x: hidden;
+}
+html {
+    scroll-behavior: smooth;
+  }
+
+body {
+    font-family: "Consolas";
+}
+.navbar-toggler:focus {
+    box-shadow: none;
+}
+.navbar-toggler {
+    border: none;
+}
+[data-bs-theme=dark] .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+    color: var--(links);
+}
+body {
+    background-color: var(--links);
+    background-color: rgb(186, 214, 213);
+}
+.footer {
+    background-color: #f5f5f5;
+}
+.footer i {
+    margin: 5px;
+}
+
+a:-webkit-any-link {
+    text-decoration:none !important;
+    }
+
+a { 
+    transition: all 0.2s ease-in-out; 
+    color:white !important;
+}
+.navbar-brand {
+
+    letter-spacing: 2px !important;
+}
+        
+
+a i:hover { 
+transform: scale(1.4); 
+}
+.modal div a i {
+    transform: none;
+}
+
+.aboutme {
+    background-color: aliceblue;
+}
+.card {
+    cursor: pointer;
+    overflow: hidden;
+}
+.card:hover { 
+    transform: scale(1.05); 
+}
+.card:hover div  { 
+        display: flex !important;
+        color:white;
+}
+.card img {
+    height: 200px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    object-fit: cover;
+    transition: transform .5s ease;
+}
+.card:hover  img{
+    -webkit-filter: brightness(50%);
+    transform: scale(1.2);
+}
+
+.hero {
+  height: 40vh;
+
+}
+
+img {
+    height: 200px;
+}
+
+
+
+
